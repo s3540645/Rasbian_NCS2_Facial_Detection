@@ -8,6 +8,7 @@ https://docs.openvinotoolkit.org/2019_R3.1/_docs_install_guides_installing_openv
 
 Download these inside the colned repo (model for NCS2)
 wget --no-check-certificate https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/face-detection-adas-0001/FP16/face-detection-adas-0001.bin
+
 wget --no-check-certificate https://download.01.org/opencv/2019/open_model_zoo/R1/models_bin/face-detection-adas-0001/FP16/face-detection-adas-0001.xml
 
 Enable Camera
