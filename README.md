@@ -4,8 +4,9 @@
 cd ~/Downloads  <br />
 git clone https://github.com/s3540645/Rasbian_NCS2_Facial_Detection.git <br />
 cd Rasbian_NCS2_Facial_Detection <br />
+cd install <br />
 chmod +x install_all.sh <br />
-/install/.install_all.sh <br />
+.install_all.sh <br />
 
 Enable Camera
 ---------------
