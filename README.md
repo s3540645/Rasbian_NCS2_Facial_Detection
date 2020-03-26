@@ -1,7 +1,7 @@
 # Rasbian_NCS2_Facial_Detection
 
 
-cd Downloads  <br />
+cd ~/Downloads  <br />
 https://github.com/s3540645/Rasbian_NCS2_Facial_Detection.git <br />
 cd Rasbian_NCS2_Facial_Detection <br />
 chmod +x install_all.sh <br />
