@@ -22,7 +22,7 @@ Change CONF_SWAPSIZE=100 to CONF_SWAPSIZE=2048
 
 To run program(image)
 --------------------
-openvino_fd_myriad.py
+python3 openvino_fd_myriad.py
 
 To run the program (video)
 ----------------------------
