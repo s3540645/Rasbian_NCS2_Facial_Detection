@@ -1,7 +1,7 @@
 # Rasbian_NCS2_Facial_Detection
 
-
-cd ~/Downloads  <br />
+mkdir ~/OpenVINO <br />
+cd ~/OpenVINO  <br />
 git clone https://github.com/s3540645/Rasbian_NCS2_Facial_Detection.git <br />
 cd Rasbian_NCS2_Facial_Detection <br />
 cd install <br />
