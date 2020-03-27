@@ -1,8 +1,7 @@
 #!/bin/bash
 
 wget https://github.com/sol-prog/raspberry-pi-opencv/releases/download/opencv4rpi2.1/opencv-4.1.0-armhf.tar.bz2
-tar xvf opencv-4.1.0-armhf.tar.bz2
-sudo mv opencv-4.1.0 /opt
+tar xvf opencv-4.1.0-armhf.tar.bz2  --strip 1 -C /opt/opencv-4.1.0
 rm opencv-4.1.0-armhf.tar.bz2
 
 #install dependancies
