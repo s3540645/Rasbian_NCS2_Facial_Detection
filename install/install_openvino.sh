@@ -14,7 +14,6 @@ source /opt/intel/openvino/bin/setupvars.sh
 echo "source /opt/intel/openvino/bin/setupvars.sh" >> ~/.bashrc
 
 #Add USB Rules
-sudo usermod -a -G users "$(whoami)"
 sh /opt/intel/openvino/install_dependencies/install_NCS_udev_rules.sh
 
 #Build and Run Object Detection Sample
