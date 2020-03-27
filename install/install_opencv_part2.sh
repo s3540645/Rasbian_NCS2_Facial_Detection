@@ -11,8 +11,8 @@ sudo apt install git
 git clone https://gist.github.com/sol-prog/ed383474872958081985de733eaf352d opencv_cpp_compile_settings
 cd opencv_cpp_compile_settings/
 sudo cp opencv.pc /usr/lib/arm-linux-gnueabihf/pkgconfig
-cd ~
 rm -rf opencv_cpp_compile_settings/
+cd ~
 
 #test OpenCV
 git clone https://github.com/sol-prog/raspberry-pi-opencv.git
