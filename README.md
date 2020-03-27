@@ -9,7 +9,9 @@ cd install <br />
 chmod +x install_all_part1.sh <br />
 chmod +x install_all_part2.sh <br />
 sh install_all_part1.sh <br />
+cd ~
 . .bashrc <br />
+cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection/install <br />
 sh install_all_part2.sh <br />
 
 Enable Camera
