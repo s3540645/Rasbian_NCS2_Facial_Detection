@@ -1,6 +1,7 @@
 # Raspbian_NCS2_Facial_Detection
 
-
+Step 1: Part 1
+---------------
 mkdir ~/OpenVINO <br />
 cd ~/OpenVINO  <br />
 git clone https://github.com/s3540645/Raspbian_NCS2_Facial_Detection.git <br />
@@ -13,11 +14,21 @@ cd ~ <br />
 sudo usermod -a -G users "$(whoami)"  <br />
 . .bashrc <br />
 reboot <br />
+
+Step 2: Install Part 2
+---------------------
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection/install <br />
 sh install_all_part2.sh <br />
 
-Enable Camera
----------------
+Step 2.5: To run program (image-optional)
+--------------------------------
+cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection <br />
+python3 openvino_fd_myriad.py <br />
+echo "Can stop here if only image file want and no camera" <br />
+
+
+Step 3: Enable Camera
+---------------------
 sudo raspi-config<br />
 Select 5 interfacing Options
 Select P1 Camera. <br />
@@ -26,20 +37,14 @@ Select Finish <br />
 sudo modprobe bcm2835-v4l2 <br />
 
 
-Increase Swap partition size
-----------------------------
+Step 4: Increase Swap partition size
+-------------------------------------
 sudo nano /etc/dphys-swapfile <br />
 Change CONF_SWAPSIZE=100 to CONF_SWAPSIZE=2048 <br />
 reboot <br />
 
 
-To run program (image)
---------------------
-cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection <br />
-python3 openvino_fd_myriad.py <br />
-
-
-To run the program (video)
+ Step 5: To run the program (video)
 ----------------------------
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection <br />
 python3 openvino_fd_myriad_video.py <br />
