@@ -11,7 +11,8 @@ chmod +x install_all_part2.sh <br />
 sh install_all_part1.sh <br />
 cd ~ <br />
 . .bashrc <br />
-Restart your Terminal  <br />
+Restart your Terminal
+---------------
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection/install <br />
 sh install_all_part2.sh <br />
 
