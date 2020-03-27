@@ -7,7 +7,7 @@ sudo tar -xf  l_openvino_toolkit_runtime_raspbian_p_2019.3.334.tgz --strip 1 -C 
 rm -rf l_openvino_toolkit_runtime_raspbian_p_2019.3.334.tgz
 
 #Install External Software Dependencies
-sudo apt install cmake
+sudo apt install cmake  -y
 
 #Set the Environment Variables
 source /opt/intel/openvino/bin/setupvars.sh

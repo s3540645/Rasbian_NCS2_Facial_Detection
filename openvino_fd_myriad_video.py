@@ -1,6 +1,10 @@
 import cv2 as cv
 import time
 
+from os.path import expanduser
+home = expanduser("~")
+modelspath = home + '/OpenVINO/models/'
+
 font                   = cv.FONT_HERSHEY_SIMPLEX
 topRightCornerOfText = (450, 10)
 topRightCornerOfText2 = (450, 40)
@@ -16,8 +20,8 @@ time1 = 0
 time2 = 0
 
 # Load the model.
-net = cv.dnn.readNet('face-detection-adas-0001.xml',
-                     'face-detection-adas-0001.bin')
+net = cv.dnn.readNet(modelspath + 'face-detection-adas-0001.xml',
+                     modelspath + 'face-detection-adas-0001.bin')
 # Specify target device.
 net.setPreferableTarget(cv.dnn.DNN_TARGET_MYRIAD)
 
