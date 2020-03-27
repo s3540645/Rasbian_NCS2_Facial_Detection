@@ -1,6 +1,6 @@
 # Raspbian_NCS2_Facial_Detection
 
-Step 1: Part 1
+Step 1: Install Part 1
 ---------------
 mkdir ~/OpenVINO <br />
 cd ~/OpenVINO  <br />
