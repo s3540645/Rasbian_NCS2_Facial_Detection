@@ -1,14 +1,17 @@
 import cv2 as cv
 from os.path import expanduser
 home = expanduser("~")
+modelspath = home + '/OpenVINO/models/'
+imagepath = home + '/OpenVINO/datasets/test/'
+image = 'T_Roosevelt.jpg'
 
 # Load the model.
-net = cv.dnn.readNet('face-detection-adas-0001.xml',
-                     'face-detection-adas-0001.bin')
+net = cv.dnn.readNet(modelspath + 'face-detection-adas-0001.xml',
+                     modelspath + 'face-detection-adas-0001.bin')
 # Specify target device.
 net.setPreferableTarget(cv.dnn.DNN_TARGET_MYRIAD)
 # Read an image.
-frame = cv.imread(home +'/Downloads/T_Roosevelt.jpg')
+frame = cv.imread(imagepath + image)
 #frame = cv.imread('/dev/video0')
 
 if frame is None:
