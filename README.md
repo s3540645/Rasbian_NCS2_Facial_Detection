@@ -16,6 +16,7 @@ Step 2: Install Part 2
 ---------------------
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection/install <br />
 sh install_all_part2.sh <br />
+reboot <br />
 
 Step 2.5: To run program (image-optional)
 --------------------------------
