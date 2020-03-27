@@ -10,9 +10,6 @@ cd install <br />
 chmod +x install_all_part1.sh <br />
 chmod +x install_all_part2.sh <br />
 sh install_all_part1.sh <br />
-cd ~ <br />
-sudo usermod -a -G users "$(whoami)"  <br />
-. .bashrc <br />
 reboot <br />
 
 Step 2: Install Part 2
