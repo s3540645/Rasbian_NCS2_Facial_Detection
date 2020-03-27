@@ -32,7 +32,7 @@ cd ~
 
 echo "--------------------------------"
 echo "test OpenCV"
-echo "--------------------------------""--------------------------------"
+echo "--------------------------------"
 
 #test OpenCV
 git clone https://github.com/sol-prog/raspberry-pi-opencv.git
