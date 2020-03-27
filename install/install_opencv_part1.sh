@@ -2,7 +2,7 @@
 
 wget https://github.com/sol-prog/raspberry-pi-opencv/releases/download/opencv4rpi2.1/opencv-4.1.0-armhf.tar.bz2
 tar xvf opencv-4.1.0-armhf.tar.bz2
-sudo cp opencv-4.1.0 /opt
+sudo cp -r opencv-4.1.0 /opt
 rm opencv-4.1.0-armhf.tar.bz2
 sudo rm -rf opencv-4.1.0
 
