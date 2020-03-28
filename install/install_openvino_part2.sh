@@ -1,7 +1,7 @@
 #Install the OpenVINO™ Toolkit for Raspbian* OS Package
 
 echo "================================"
-echo "install_OpenVino start"
+echo "install_OpenVino_part2 start"
 echo "================================"
 
 echo "--------------------------------"
@@ -54,6 +54,6 @@ wget https://upload.wikimedia.org/wikipedia/commons/e/eb/T_Roosevelt.jpg -P ~/Op
 ./armv7l/Release/object_detection_sample_ssd -m face-detection-adas-0001.xml -d MYRIAD -i ~/OpenVINO/datasets/test/T_Roosevelt.jpg
 
 echo "================================"
-echo "install_OpenVino finished"
+echo "install_OpenVino_part2 finished"
 echo "================================"
 
