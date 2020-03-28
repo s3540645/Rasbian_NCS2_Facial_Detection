@@ -20,6 +20,8 @@ echo "Open new terminal"  <br />
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection/install <br />
 chmod +x install_all_part2.sh <br />
 sh install_all_part2.sh <br />
+cd ~  <br />
+echo "source /opt/intel/openvino/bin/setupvars.sh" >> ~/.bashrc <br />
 exit <br />
 
 Step 2.5: To run program (image-optional)
