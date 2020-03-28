@@ -8,7 +8,7 @@ git clone https://github.com/s3540645/Raspbian_NCS2_Facial_Detection.git <br />
 cd Raspbian_NCS2_Facial_Detection <br />
 cd install <br />
 chmod +x install_all_part1.sh <br />
-sh install_all_part1.sh <br />
+sh install_all_part1.sh <br /> <br />
 cd ~  <br />
 echo 'export LD_LIBRARY_PATH=/opt/opencv-4.1.0/lib:$LD_LIBRARY_PATH' >> .bashrc  <br />
 . .bashrc  <br />
