@@ -16,14 +16,15 @@ exit <br />
 
 Step 2: Install Part 2
 ---------------------
-echo "Open new terminal"
+echo "Open new terminal"  <br />
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection/install <br />
 chmod +x install_all_part2.sh <br />
 sh install_all_part2.sh <br />
-reboot <br />
+exit <br />
 
 Step 2.5: To run program (image-optional)
 --------------------------------
+echo "Open new terminal"  <br />
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection <br />
 python3 openvino_fd_myriad.py <br />
 echo "Can stop here if only image file want and no camera" <br />
