@@ -34,14 +34,6 @@ echo "--------------------------------"
 #Used for OpenVino install
 sudo usermod -a -G users "$(whoami)"
 
-echo "--------------------------------"
-echo "add to system path"
-echo "--------------------------------"
-
-#add to system path
-cd ~
-echo 'export LD_LIBRARY_PATH=/opt/opencv-4.1.0/lib:$LD_LIBRARY_PATH' >> .bashrc
-. .bashrc
 
 echo "================================"
 echo "install_opencv_part1 finished"
