@@ -34,7 +34,6 @@ echo "--------------------------------"
 #Used for OpenVino install
 sudo usermod -a -G users "$(whoami)"
 
-
 echo "================================"
 echo "install_opencv_part1 finished"
 echo "================================"

@@ -1,25 +1,24 @@
 #!/bin/bash
 
 echo "================================"
-echo "install_all_part2 start"
+echo "install_all_part3 start"
 echo "================================"
 
 echo "--------------------------------"
 echo "chmod for sh"
 echo "--------------------------------"
 
-chmod +x install_opencv_part2.sh
-chmod +x install_openvino.sh
+chmod +x install_openvino_part2.sh
 chmod +x download_models.sh
 
 echo "--------------------------------"
-echo "run opencv part 2, openvino part 1"
+echo "run opencv, openvino and download models"
 echo "--------------------------------"
 
-./install_opencv_part2.sh
-./install_openvino-part1.sh
-
+./install_openvino_part2.sh
+./download_models.sh
+cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection
 
 echo "================================"
-echo "install_all_part2 finished"
+echo "install_all_part3 finished"
 echo "================================"

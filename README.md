@@ -20,11 +20,20 @@ echo "Open new terminal"  <br />
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection/install <br />
 chmod +x install_all_part2.sh <br />
 sh install_all_part2.sh <br />
-cd ~  <br />
+source /opt/intel/openvino/bin/setupvars.sh
+sh /opt/intel/openvino/install_dependencies/install_NCS_udev_rules.sh
 echo "source /opt/intel/openvino/bin/setupvars.sh" >> ~/.bashrc <br />
 exit <br />
 
-Step 2.5: To run program (image-optional)
+Step 3: Install Part 2
+---------------------
+echo "Open new terminal"  <br />
+cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection/install <br />
+chmod +x install_all_part3.sh <br />
+sh install_all_part3.sh <br />
+exit <br />
+
+Step 3.5: To run program (image-optional)
 --------------------------------
 echo "Open new terminal"  <br />
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection <br />
@@ -32,7 +41,7 @@ python3 openvino_fd_myriad.py <br />
 echo "Can stop here if only image file want and no camera" <br />
 
 
-Step 3: Enable Camera
+Step 4: Enable Camera
 ---------------------
 sudo raspi-config<br />
 Select 5 interfacing Options
@@ -42,14 +51,14 @@ Select Finish <br />
 sudo modprobe bcm2835-v4l2 <br />
 
 
-Step 4: Increase Swap partition size
+Step 5: Increase Swap partition size
 -------------------------------------
 sudo nano /etc/dphys-swapfile <br />
 Change CONF_SWAPSIZE=100 to CONF_SWAPSIZE=2048 <br />
 reboot <br />
 
 
- Step 5: To run the program (video)
+ Step 6: To run the program (video)
 ----------------------------
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection <br />
 python3 openvino_fd_myriad_video.py <br />
