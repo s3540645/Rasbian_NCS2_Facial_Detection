@@ -5,13 +5,6 @@ echo "install_all_part3 start"
 echo "================================"
 
 echo "--------------------------------"
-echo "chmod for sh"
-echo "--------------------------------"
-
-chmod +x install_openvino_part2.sh
-chmod +x download_models.sh
-
-echo "--------------------------------"
 echo "run opencv, openvino and download models"
 echo "--------------------------------"
 
