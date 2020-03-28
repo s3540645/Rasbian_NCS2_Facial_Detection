@@ -1,7 +1,10 @@
 # Raspbian_NCS2_Facial_Detection
 
+Note: if V2 fails use V1
+---------------
 Step 1: Install Part 1
 ---------------
+echo "Connect Camera and Neural Compute Stick 2 to Raspberry pi 4" <br />
 mkdir ~/OpenVINO <br />
 cd ~/OpenVINO  <br />
 git clone https://github.com/s3540645/Raspbian_NCS2_Facial_Detection.git <br />
