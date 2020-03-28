@@ -9,8 +9,7 @@ echo "chmod for sh"
 echo "--------------------------------"
 
 chmod +x install_opencv_part2.sh
-chmod +x install_openvino.sh
-chmod +x download_models.sh
+chmod +x install_openvino_part1.sh
 
 echo "--------------------------------"
 echo "run opencv part 2, openvino part 1"
