@@ -17,7 +17,7 @@ echo "run opencv part 2, openvino part 1"
 echo "--------------------------------"
 
 ./install_opencv_part2.sh
-./install_openvino-part1.sh
+./install_openvino_part1.sh
 
 
 echo "================================"
