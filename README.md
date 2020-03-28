@@ -7,7 +7,7 @@ cd ~/OpenVINO  <br />
 git clone https://github.com/s3540645/Raspbian_NCS2_Facial_Detection.git <br />
 cd Raspbian_NCS2_Facial_Detection <br />
 cd install <br />
-chmod +x install_all_part1.sh <br />
+chmod +x *.sh <br />
 sh install_all_part1.sh <br /> <br />
 cd ~  <br />
 echo 'export LD_LIBRARY_PATH=/opt/opencv-4.1.0/lib:$LD_LIBRARY_PATH' >> .bashrc  <br />
@@ -18,7 +18,6 @@ Step 2: Install Part 2
 ---------------------
 echo "Open new terminal"  <br />
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection/install <br />
-chmod +x install_all_part2.sh <br />
 sh install_all_part2.sh <br />
 source /opt/intel/openvino/bin/setupvars.sh <br />
 sh /opt/intel/openvino/install_dependencies/install_NCS_udev_rules.sh <br />
@@ -29,7 +28,6 @@ Step 3: Install Part 2
 ---------------------
 echo "Open new terminal"  <br />
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection/install <br />
-chmod +x install_all_part3.sh <br />
 sh install_all_part3.sh <br />
 exit <br />
 
