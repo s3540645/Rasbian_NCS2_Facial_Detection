@@ -42,17 +42,17 @@ echo "Can stop here if only image file want and no camera" <br />
 Step 4: Enable Camera
 ---------------------
 sudo raspi-config<br />
-Select 5 interfacing Options
-Select P1 Camera. <br />
-Select Yes for enable <br />
-Select Finish <br />
+echo "Select 5 interfacing Options" <br />
+echo "Select P1 Camera." <br />
+echo "Select Yes for enable" <br />
+echo "Select Finish" <br />
 sudo modprobe bcm2835-v4l2 <br />
 
 
 Step 5: Increase Swap partition size
 -------------------------------------
 sudo nano /etc/dphys-swapfile <br />
-Change CONF_SWAPSIZE=100 to CONF_SWAPSIZE=2048 <br />
+echo "Change CONF_SWAPSIZE=100 to CONF_SWAPSIZE=2048" <br />
 reboot <br />
 
 
@@ -60,4 +60,4 @@ reboot <br />
 ----------------------------
 cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection <br />
 python3 openvino_fd_myriad_video.py <br />
-Use the ESC key to exit  <br />
+echo "Use the ESC key to exit" <br />
