@@ -26,7 +26,7 @@ echo "--------------------------------"
 #OpenCv config for c++
 git clone https://gist.github.com/sol-prog/ed383474872958081985de733eaf352d opencv_cpp_compile_settings
 cd opencv_cpp_compile_settings/
-sudo cp opencv.pc /usr/lib/arm-linux-gnueabihf/pkgconfig
+sudo cp -r opencv.pc /usr/lib/arm-linux-gnueabihf/pkgconfig
 rm -rf opencv_cpp_compile_settings/
 cd ~
 
