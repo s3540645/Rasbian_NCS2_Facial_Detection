@@ -35,13 +35,16 @@ echo "Add USB Rules"
 echo "--------------------------------"
 
 #Add USB Rules
-sh /opt/intel/openvino/install_dependencies/install_NCS_udev_rules.sh
+cd /opt/intel/openvino/install_dependencies/
+sudo chmod +x install_NCS_udev_rules.sh
+./install_NCS_udev_rules.sh
 
 echo "--------------------------------"
 echo "Build and Run Object Detection Sample"
 echo "--------------------------------"
 
-#Build and Run Object Detection Sample
+#Build and Run Object Detection 
+cd ~/OpenVINO/Sample
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples
 make -j2 object_detection_sample_ssd
