@@ -29,7 +29,6 @@ echo "--------------------------------"
 
 #Set the Environment Variables
 source /opt/intel/openvino/bin/setupvars.sh
-echo "source /opt/intel/openvino/bin/setupvars.sh" >> ~/.bashrc
 
 echo "--------------------------------"
 echo "Add USB Rules"
