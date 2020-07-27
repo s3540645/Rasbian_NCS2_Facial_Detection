@@ -65,7 +65,7 @@ cd ~/OpenVINO/Raspbian_NCS2_Facial_Detection <br />
 python3 openvino_fd_myriad_video.py <br />
 echo "Use the ESC key to exit" <br />
 
- Step 7: Insperation and Sources
+ Step 7: Inspiration and Sources
 ------------------------------------
 https://hackaday.com/2019/01/31/ai-on-raspberry-pi-with-the-intel-neural-compute-stick/ <br />
 https://solarianprogrammer.com/2019/09/17/install-opencv-raspberry-pi-raspbian-cpp-python-development/ <br />
